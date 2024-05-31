@@ -1,0 +1,7 @@
+resilience4j.retry:
+  instances:
+    weatherService:
+      maxAttempts: 3
+      waitDuration: 10s
+      enableExponentialBackoff: true
+      exponentialBackoffMultiplier: 2
